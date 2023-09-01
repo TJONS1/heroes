@@ -12,7 +12,14 @@ function App() {
 
   return (
     <>
-      <h1 className='title'>HEROES</h1>
+      <h1 className='title'>
+        <span style={{"--i":"1"}}>H</span>
+        <span style={{"--i":"2"}}>E</span>
+        <span style={{"--i":"3"}}>R</span>
+        <span style={{"--i":"4"}}>O</span>
+        <span style={{"--i":"5"}}>E</span>
+        <span style={{"--i":"6"}}>S</span>
+        </h1>
       <div className='wrapper'>
         {heroes.map(h => <Hero key={h.id} hero={h} />)}
       </div>

@@ -11,7 +11,7 @@ const Hero = ({hero}) => {
   return (
     <div><h1>{hero.name}</h1><span>{stars.map(s => {
         if(hero.awesome !== s - 1) {
-            return <StarIcon />
+            return <StarIcon key={s} />
         }
     })}</span></div>
   )
