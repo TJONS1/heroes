@@ -10,35 +10,53 @@ h1 {
   font-size: 60px;
   text-align: center;
 }
+
+.title {
+
+  /* text-shadow: 0px 0px 10px #000; */
+  animation: pulse 3s ease infinite alternate-reverse;
+}
+
 .wrapper {
   width: min(100%, 75rem);
   display: grid;
   grid-auto-flow: row;
   gap: 1rem;
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	/* height: 100vh; */
-  animation: cool 5s ease-out infinite;
+  background-size: 400% 400%;
+  /* height: 100vh; */
+  animation: cool 5s ease-out infinite alternate-reverse;
   padding: 1rem;
 }
+
 @media (min-width: 900px) {
   .wrapper {
     grid-auto-flow: column;
   }
 }
 
-@keyframes cool {
+@keyframes pulse {
   0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-  
+    text-shadow: 0px -30px 1px #6d7500;
+  }
+
+  100% {
+    text-shadow: 0px -30px 35px #6d7500;
+  }
+
 }
 
+@keyframes cool {
+  0% {
+    background-position: 0% 50%;
+  }
 
+  50% {
+    background-position: 100% 50%;
+  }
 
+  100% {
+    background-position: 0% 50%;
+  }
+
+}

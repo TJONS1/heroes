@@ -12,7 +12,7 @@ function App() {
 
   return (
     <>
-      <h1>HEROES</h1>
+      <h1 className='title'>HEROES</h1>
       <div className='wrapper'>
         {heroes.map(h => <Hero key={h.id} hero={h} />)}
       </div>
